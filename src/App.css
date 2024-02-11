@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100vh; /* Full height of the viewport */
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+  width:150px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:bold
+}
+
+.buttons{
+  margin-top:20px;
+  margin-left:25%;
+  margin-bottom:0;
+}
+.yes-button{
+  background-color:#C7EA46;
+  margin-right: 10px;
+}
+
+.no-button{
+  background-color: #ce2029;
+}
+
+.sorry-button{
+  background-color: #e4cd05;
+  margin-left: 60px;
+}
+  .knock-knock {
+    position: absolute;
+    top: 30%; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; 
+  }
+
+.door-container {
+  display: flex;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
+.door {
+  background-image: url('../public/door-image.jpg'); /* URL to your door image */
+  background-size: contain; /* Fit the image within the element while preserving aspect ratio */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image within the element */
+  width: 250px;
+  height: 400px;
+  position: relative;
+  box-sizing: border-box; /* Include border in the width and height */
+}
+
+.open {
+  transform: rotateY(-90deg);
+}
+
+.door-button {
+  width:150px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 100px;
+  background-color: #C7EA46;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 0.4s infinite;
+}
+
+.sound {
+  color:#FCE205;
+  font-weight:bold;
+}
+
+.image-container {
+  display: flex;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  }
+
+.opened-door{
+  width:700px;
+  height:auto;
+}
+
+.angrycat{
+  width:300px;
+  background-color: black;
+  height:auto;
+}
+
+.frames {
+  display: flex;
+}
+
+.frame {
+  margin: 0 10px; /* Adjust spacing between frames */
+}
+
+.frame img {
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.complete {
+  color:white;
+}
